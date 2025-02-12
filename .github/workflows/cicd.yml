@@ -11,3 +11,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: action/checkout@v4
