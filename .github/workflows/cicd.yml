@@ -24,10 +24,10 @@ jobs:
           cache: 'maven'
 
       - name: Compile
-        run: mvn compile
+        run: mvn -B compile --file pom.xml
         
       - name: Test
-        run: mvn test
+        run: mvn -B test --file pom.xml
 
       - name: Package
-        run: mvn clean package 
+        run: mvn -B clean package --file pom.xml
