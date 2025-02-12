@@ -1,1 +1,13 @@
-name: my github action cicd yaml file
+name: Github Action CICD Pipeline example
+
+on:
+    push:
+      branches:
+        - main
+    pull_request:
+      branches:
+        - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
