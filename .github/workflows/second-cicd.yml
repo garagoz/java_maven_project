@@ -1,9 +1,11 @@
 name: For test pupose
 
 on:
-  push:
-    branches:
-    - main
+ schedule:
+   - cron: "*/1 * * * *"
+  # push:
+  #   branches:
+  #   - main
 
 jobs:
   ascii-job:
